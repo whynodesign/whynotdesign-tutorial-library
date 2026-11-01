@@ -1,0 +1,12 @@
+{
+ "L": "70",
+ "W": "45",
+ "D": "120",
+ "thickness": "0.45",
+ "tuckDepth": "12",
+ "tuckRadius": "3",
+ "tuckClearance": "0.95",
+ "tuckLock": "20",
+ "dustFlapDepth": "14",
+ "glueSize": "12"
+}

@@ -1,0 +1,13 @@
+chunk_id: "terminology"
+domain: "identity"
+context_tags: ["naming", "glossary"]
+depends_on: ["voice-core"]
+version: "1.0"
+status: "active"
+summary: "What to call things."
+use:
+  "焙次 / roast batch": "one charcoal roast, numbered"
+  "焙度 1–5 / roast level 1–5": "1 light, 5 deep"
+  "回 / round": "one pass over the charcoal"
+  "歇 / rest": "pause between rounds"
+avoid: ["炭焙工藝傳承百年", "artisan", "premium", "symphony"]

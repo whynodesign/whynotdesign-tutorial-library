@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 注意：首次投产前先打样核对。 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="256.5mm" height="279.3mm" viewBox="-49.5 -112.8 256.5 279.3" data-box-id="T004C" data-length="70" data-width="50" data-depth="120" data-caliper="0.5" data-blank-height="267.3">
+<style>
+  .cut { fill: none; stroke: #005cff; stroke-width: 0.25; }
+  .fold { fill: none; stroke: #ff2d2d; stroke-width: 0.25; stroke-dasharray: 4 2; }
+  .note { fill: #888; font-size: 5px; font-family: sans-serif; }
+</style>
+  <text class="note" x="-47.5" y="162.5">注意：首次投产前先打样核对。</text>
+  <path class="fold" d="M 0 -0.5 L 0 119.5" vector-effect="non-scaling-stroke" />
+  <path class="fold" d="M 70 -0.5 L 70 119.5" vector-effect="non-scaling-stroke" />
+  <path class="fold" d="M 0 119.5 L 70 119.5" vector-effect="non-scaling-stroke" />
+  <path class="fold" d="M 0 -0.5 L 70 -0.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 0.2 -0.8 A 0.8 0.8 0 0 1 -0.6 0" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 70.6 0 A 0.8 0.8 0 0 1 69.8 -0.8" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M -49.5 0 L -49.5 119.5" vector-effect="non-scaling-stroke" />
+  <path class="fold" d="M -48.5 0 L -0.6 0" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M -48.5 0 L -49.5 0" vector-effect="non-scaling-stroke" />
+  <path class="fold" d="M -49.5 119.5 L -0.766 119.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M -0.766 119.5 A 0.8 0.8 0 0 1 0.5 120.15" vector-effect="non-scaling-stroke" />
+  <path class="fold" d="M 120 0 L 120 119.5" vector-effect="non-scaling-stroke" />
+  <path class="fold" d="M 70.6 0 L 120 0" vector-effect="non-scaling-stroke" />
+  <path class="fold" d="M 70.766 119.5 L 120 119.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 69.5 120.15 A 0.8 0.8 0 0 1 70.766 119.5" vector-effect="non-scaling-stroke" />
+  <path class="fold" d="M 190 0.268 L 190 119.5" vector-effect="non-scaling-stroke" />
+  <path class="fold" d="M 190 119.5 L 120.766 119.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 119.5 120.15 A 0.8 0.8 0 0 1 120.959 119.697" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 190 0.268 L 189 0" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 189 0 L 189 -40" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 179 -50 A 10 10 0 0 1 189 -40" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 121 -1 A 1 1 0 0 1 120 0" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 121 -1 L 121 -40" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 121 -40 A 10 10 0 0 1 131 -50" vector-effect="non-scaling-stroke" />
+  <path class="fold" d="M 179 -50 L 131 -50" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 139 -32.5 A 1.5 1.5 0 0 1 139 -35.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 171 -35.5 A 1.5 1.5 0 0 1 171 -32.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 139 -32.5 L 171 -32.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 139 -35.5 L 153 -35.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 171 -35.5 L 157 -35.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 153 -35.5 A 2 2 0 0 1 157 -35.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M -48.5 0 L -48.5 -5 L -46.5 -7 L -43.081 -26.389" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M -43.081 -26.389 A 8 8 0 0 1 -35.203 -33" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M -35.203 -33 L -8.5 -33 L -3.5 -2.9 L -1.166 -0.234" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M -0.6 0 A 0.8 0.8 0 0 1 -1.166 -0.234" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 120 0 A 1 1 0 0 1 119 -1" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 119 -1 L 119 -5 L 117 -7 L 113.581 -26.389" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 105.703 -33 A 8 8 0 0 1 113.581 -26.389" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 105.703 -33 L 78.5 -33 L 73.5 -2.9 L 71.166 -0.234" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 71.166 -0.234 A 0.8 0.8 0 0 1 70.6 0" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 190 0.268 L 207 4.555" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 190 119.5 L 207 114.945" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 207 4.555 L 207 114.945" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 0.2 -0.8 L 0.2 -49.75 L 0.45 -49.75" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 5.7 -49.5 L 5.7 -49" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 69.8 -0.8 L 69.8 -49.75 L 69.55 -49.75" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 64.3 -49.5 L 64.3 -49" vector-effect="non-scaling-stroke" />
+  <path class="fold" d="M 5.7 -49.5 L 64.3 -49.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 0.45 -49.75 L 5.45 -49.75" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 5.45 -49.75 A 0.25 0.25 0 0 1 5.7 -49.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 69.55 -49.75 L 64.55 -49.75" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 64.3 -49.5 A 0.25 0.25 0 0 1 64.55 -49.75" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 0.45 -49.75 L 0.45 -53.15" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 0.45 -53.15 L 0.45 -58" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 0.45 -58 A 8.5 8.5 0 0 1 8.95 -66.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 8.95 -66.5 L 61.05 -66.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 61.05 -66.5 A 8.5 8.5 0 0 1 69.55 -58" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 69.55 -58 L 69.55 -53.15" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 69.55 -53.15 L 69.55 -49.75" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M -0.3 119.35 A 0.8 0.8 0 0 1 0.5 120.15" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 0.5 120.15 L 0.5 154.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 0.5 154.5 L 15.5 154.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 17.5 152.5 A 2 2 0 0 1 15.5 154.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 17.5 152.5 L 17.5 144.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 17.5 144.5 L 52.5 144.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 52.5 152.5 L 52.5 144.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 54.5 154.5 A 2 2 0 0 1 52.5 152.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 69.5 154.5 L 54.5 154.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 69.5 120.15 L 69.5 154.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 69.5 120.15 A 0.8 0.8 0 0 1 70.3 119.35" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M -49.5 119.5 L -49 120.15" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M -49 120.15 L -49 147.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M -49 147.5 L -27 147.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M -25 145.5 A 2 2 0 0 1 -27 147.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M -25 145.5 L -25 137.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M -25 137.5 L -0.766 119.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 119.5 120.15 A 0.8 0.8 0 0 1 120.3 119.35" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 119.5 120.15 L 119.5 147.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 119.5 147.5 L 97.5 147.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 97.5 147.5 A 2 2 0 0 1 95.5 145.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 95.5 145.5 L 95.5 137.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 95.5 137.5 L 70.766 119.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 119.5 120.15 A 0.8 0.8 0 0 1 120.959 119.697" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 120.959 119.697 L 138 144.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 138 144.5 L 138 152.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 140 154.5 A 2 2 0 0 1 138 152.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 190 119.5 L 172 144.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 172 144.5 L 172 152.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 172 152.5 A 2 2 0 0 1 170 154.5" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 140 154.5 L 170 154.5" vector-effect="non-scaling-stroke" />
+  <path class="fold" d="M 179 -50.8 L 131 -50.8" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 179 -50 A 0.4 0.4 0 0 1 179 -50.8" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 131 -50.8 A 0.4 0.4 0 0 1 131 -50" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 189 -60.8 A 10 10 0 0 1 179 -50.8" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 131 -50.8 A 10 10 0 0 1 121 -60.8" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 189 -60.8 L 189 -100.55 L 188.75 -100.8" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 121 -60.8 L 121 -100.55 L 121.25 -100.8" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 188.75 -100.8 L 186.634 -112.8 L 123.366 -112.8 L 121.25 -100.8" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 139 -65 A 1.5 1.5 0 0 1 139 -68" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 171 -68 A 1.5 1.5 0 0 1 171 -65" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 139 -68 L 171 -68" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 139 -65 L 153 -65" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 171 -65 L 157 -65" vector-effect="non-scaling-stroke" />
+  <path class="cut" d="M 157 -65 A 2 2 0 0 1 153 -65" vector-effect="non-scaling-stroke" />
+</svg>

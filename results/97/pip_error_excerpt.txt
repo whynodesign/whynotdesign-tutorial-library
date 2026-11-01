@@ -1,0 +1,5 @@
+  error: subprocess-exited-with-error
+      error: PyObjC requires macOS to build
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+note: This error originates from a subprocess, and is likely not a problem with pip.

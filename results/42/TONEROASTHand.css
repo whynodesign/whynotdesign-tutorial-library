@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'TONEROAST Hand';
+  src: url('TONEROASTHand.woff2') format('woff2'),
+       url('TONEROASTHand.woff') format('woff'),
+       url('TONEROASTHand.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

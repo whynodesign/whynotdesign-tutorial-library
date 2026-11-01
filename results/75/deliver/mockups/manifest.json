@@ -1,0 +1,14 @@
+[
+ {
+  "item": "coffee-bag",
+  "label": "Coffee bean bag",
+  "kind": "illustration",
+  "file": "toneroast-mockup-coffee-bag.png"
+ },
+ {
+  "item": "tote",
+  "label": "Tote bag",
+  "kind": "illustration",
+  "file": "toneroast-mockup-tote.png"
+ }
+]

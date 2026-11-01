@@ -1,0 +1,7 @@
+palette audit 'TONEROAST': PASS - 0 gate, 10 warn, 5 info
+warn contrast.light.link-on-text: light: link #8e511b on text #241911 is 2.74:1, below 3.0:1 (links distinguishable from body text without underline (WCAG G183); WCAG 2, no rounding) | fix: modes.light.link -> #a8642a
+warn cvd.light.deutan.primary-accent: light: primary and accent collapse to CIEDE2000 5.7 for deutanopia (#897b2a vs #7a6d11) | fix: modes.light.accent -> #a91f08
+warn cvd.light.deutan.success-danger: light: success and danger collapse to CIEDE2000 8.4 for deutanopia (#615616 vs #766b3a) | fix: modes.light.danger -> #b83542
+warn cvd.dark.protan.primary-accent: dark: primary and accent collapse to CIEDE2000 6.1 for protanopia (#968738 vs #8e8352) | fix: modes.dark.accent -> #db5943
+... 11 more finding(s)
+full report: --full (Markdown) or --json

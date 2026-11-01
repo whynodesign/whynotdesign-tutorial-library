@@ -1,0 +1,4 @@
+Judge only the rendered frames, ignore what you meant to make
+Score 1-10: hook in 2s, phone readability, motion, variety, sound sync, brand accuracy
+List the 3 worst defects with timestamp, evidence and a local fix
+Patch those seconds, re-render them, repeat until every score is 8+

@@ -1,0 +1,18 @@
+{
+  "chunk_id": "visual-system",
+  "domain": "identity",
+  "context_tags": ["colour", "typography", "tokens"],
+  "depends_on": ["positioning-core"],
+  "version": "1.0",
+  "status": "active",
+  "summary": "Colour and type tokens. Logo not defined in this test (kept open on purpose).",
+  "colour": {
+    "rice-paper": {"hex": "#EFE8DA", "role": "ground"},
+    "kiln-charcoal": {"hex": "#1E1A17", "role": "text, dark ground"},
+    "oolong-amber": {"hex": "#A8642A", "role": "primary shapes; not body text on rice paper (3.8:1)"},
+    "celadon-grey": {"hex": "#A9B3A1", "role": "secondary fills"},
+    "ember-red": {"hex": "#D8432B", "role": "one spark per layout, never a background"}
+  },
+  "type": {"display": "Noto Serif TC (OFL)", "text": "Noto Serif TC (OFL)", "note": "test choice, not final"},
+  "logo": null
+}

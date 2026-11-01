@@ -1,0 +1,8 @@
+chunk_id: "constraints-messaging"
+domain: "guardrails"
+context_tags: ["claims", "legal"]
+depends_on: ["voice-core"]
+version: "1.0"
+status: "active"
+summary: "What never to say."
+never: ["health or medical claims", "'organic' without certification", "invented awards or origin stories"]

@@ -1,0 +1,28 @@
+chunk_id: "positioning-core"
+domain: "positioning"
+category: "positioning"
+subcategory: "foundation"
+context_tags: ["value-proposition", "positioning-statement", "what-toneroast-is"]
+depends_on: []
+token_count: 0  # filled by count_chunks.py
+format: "yaml"
+version: "1.0"
+last_updated: "2026-11-01"
+status: "active"
+summary: >-
+  Core positioning for 焙曲 / TONEROAST, a fictional small-batch charcoal-roasted
+  Taiwanese oolong brand (test brand). Roasting treated as a musical score.
+company:
+  name: "焙曲 / TONEROAST"
+  category: "Specialty Taiwanese oolong, charcoal-roasted, small batch"
+  tagline: "焙火如樂譜 · Roast like a score"
+vision: "Make slow charcoal roasting legible and collectible, batch by batch."
+mission: "Roast each batch to its own tempo and tell drinkers what that tempo was."
+value_proposition: >-
+  Every tin carries one roast, logged like a score: how many rounds over the charcoal,
+  how long each rest. Drinkers coming from specialty coffee get the batch logic they
+  already know; tea drinkers get a roast that is patient, smoky-warm and precise.
+key_differentiators:
+  - "Batch-level roast logs (rounds, rests, roast level 1–5) on every tin"
+  - "Charcoal only; no electric roasting"
+  - "No leaf, mountain or calligraphy imagery: the roast itself is the subject"

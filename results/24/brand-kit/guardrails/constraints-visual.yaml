@@ -1,0 +1,12 @@
+chunk_id: "constraints-visual"
+domain: "guardrails"
+context_tags: ["visual", "misuse"]
+depends_on: ["visual-system"]
+version: "1.0"
+status: "active"
+summary: "Visual never-dos."
+never:
+  - "tea leaves, teapots, mountains, brush calligraphy, gold foil"
+  - "ember-red as a background or for body text"
+  - "AI-rendered type as final artwork (re-set with real fonts)"
+  - "simplified Chinese characters"

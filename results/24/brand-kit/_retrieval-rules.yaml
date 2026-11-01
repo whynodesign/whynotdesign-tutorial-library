@@ -1,0 +1,17 @@
+# Task-to-chunk mappings (Tier 2 retrieval) · TONEROAST brand system v1.0 (test)
+task_profiles:
+  social_media:
+    description: "Instagram / Threads captions"
+    always_load: ["voice-core", "terminology", "constraints-messaging"]
+    load_if_relevant: ["positioning-core"]
+    token_budget: 1400
+  packaging_label:
+    description: "Tin / pouch label copy and layout notes"
+    always_load: ["positioning-core", "terminology", "visual-system", "constraints-visual"]
+    load_if_relevant: ["voice-core"]
+    token_budget: 2000
+  image_prompt:
+    description: "Writing a prompt for an image model"
+    always_load: ["visual-system", "constraints-visual"]
+    load_if_relevant: ["voice-core"]
+    token_budget: 1200
