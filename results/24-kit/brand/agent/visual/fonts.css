@@ -1,0 +1,11 @@
+/* TONEROAST type stack. Load this before tokens.css.
+   Latin faces are bundled (SIL OFL 1.1, licence texts in fonts/).
+   CJK faces are NOT bundled: install or self-host Noto Serif TC / Noto Sans TC
+   (SIL OFL 1.1) from https://fonts.google.com/noto/specimen/Noto+Serif+TC and
+   https://fonts.google.com/noto/specimen/Noto+Sans+TC, or the Noto CJK release
+   https://github.com/notofonts/noto-cjk . local() picks them up if installed. */
+@font-face { font-family: "Lexend Exa"; src: url("fonts/LexendExa-VariableFont_wght.ttf") format("truetype"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "DM Mono"; src: url("fonts/DMMono-Regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "DM Mono"; src: url("fonts/DMMono-Medium.ttf") format("truetype"); font-weight: 500; font-display: swap; }
+@font-face { font-family: "Noto Serif TC"; src: local("Noto Serif TC Bold"), local("NotoSerifTC-Bold"), local("Noto Serif CJK TC Bold"), local("NotoSerifCJKtc-Bold"); font-weight: 700; }
+@font-face { font-family: "Noto Sans TC"; src: local("Noto Sans TC Regular"), local("NotoSansTC-Regular"), local("Noto Sans CJK TC Regular"), local("NotoSansCJKtc-Regular"), local("Noto Sans CJK TC"); font-weight: 400; }

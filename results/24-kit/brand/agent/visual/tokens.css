@@ -1,0 +1,142 @@
+/* Generated from visual-system.json by tools/build_tokens.py. Do not edit.
+   Change the value in visual-system.json and regenerate, so the two never disagree.
+   CONCEPT / EXAMPLE ONLY - fictional brand 焙曲 / TONEROAST. */
+
+:root {
+
+  /* color */
+  --rice-paper: #EFE8DA;
+  --rice-paper-rgb: 239 232 218;
+  --kiln-char: #1E1A17;
+  --kiln-char-rgb: 30 26 23;
+  --oolong-amber: #A8642A;
+  --oolong-amber-rgb: 168 100 42;
+  --celadon-grey: #A9B3A1;
+  --celadon-grey-rgb: 169 179 161;
+  --ember-red: #D8432B;
+  --ember-red-rgb: 216 67 43;
+
+  /* type families */
+  --font-display-cjk: "Noto Serif TC", "Noto Serif CJK TC", "Source Han Serif TC", serif;
+  --weight-display-cjk: 700;
+  --font-wordmark-latin: "Lexend Exa", sans-serif;
+  --weight-wordmark-latin: 500;
+  --font-mono: "DM Mono", "Noto Sans TC", "Noto Sans CJK TC", ui-monospace, monospace;
+  --weight-mono: 400;
+  --font-body-cjk: "Noto Sans TC", "Noto Sans CJK TC", "Source Han Sans TC", sans-serif;
+  --weight-body-cjk: 400;
+  --tracking-wordmark: 0.4em;
+
+  /* type scale (px) */
+  --text-caption-size: 12px;
+  --text-caption-line: 1.5;
+  --text-caption-tracking: 0.08em;
+  --text-caption-family: var(--font-mono);
+  --text-label-size: 14px;
+  --text-label-line: 1.4;
+  --text-label-tracking: 0.12em;
+  --text-label-family: var(--font-mono);
+  --text-body-size: 16px;
+  --text-body-line: 1.75;
+  --text-body-tracking: 0.02em;
+  --text-body-family: var(--font-body-cjk);
+  --text-lead-size: 20px;
+  --text-lead-line: 1.6;
+  --text-lead-tracking: 0.02em;
+  --text-lead-family: var(--font-body-cjk);
+  --text-h3-size: 28px;
+  --text-h3-line: 1.3;
+  --text-h3-tracking: 0.04em;
+  --text-h3-family: var(--font-display-cjk);
+  --text-h2-size: 40px;
+  --text-h2-line: 1.2;
+  --text-h2-tracking: 0.04em;
+  --text-h2-family: var(--font-display-cjk);
+  --text-h1-size: 56px;
+  --text-h1-line: 1.15;
+  --text-h1-tracking: 0.06em;
+  --text-h1-family: var(--font-display-cjk);
+  --text-display-size: 96px;
+  --text-display-line: 1.05;
+  --text-display-tracking: 0.08em;
+  --text-display-family: var(--font-display-cjk);
+  --text-numeral-size: 160px;
+  --text-numeral-line: 1.0;
+  --text-numeral-tracking: -0.02em;
+  --text-numeral-family: var(--font-mono);
+
+  /* type scale (print pt) */
+  --print-legal-min: 6pt;
+  --print-caption: 7pt;
+  --print-label: 8pt;
+  --print-body: 9pt;
+  --print-lead: 12pt;
+  --print-h2: 18pt;
+  --print-h1: 28pt;
+  --print-display: 48pt;
+
+  /* space */
+  --space-0: 0px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+  --space-11: 192px;
+
+  /* radius / effects */
+  --radius: 0px;
+  --shadow: none;
+  --grain-opacity: 0.05;
+
+  /* mark geometry (ratios of mark width / line gap) */
+  --mark-width: 240;
+  --mark-height: 227;
+  --mark-lines: 5;
+  --mark-line-weight: 3;
+  --mark-line-gap: 36;
+  --mark-top-line-y: 56;
+  --mark-line-weight-small: 6;
+  --mark-level-x-start: 0.42;
+  --mark-level-height: 0.62;
+  --mark-dot-r: 0.34;
+  --mark-dot-offset: 0.75;
+  --mark-min-px: 48px;
+  --mark-small-threshold-px: 80px;
+
+  /* score */
+  --score-bar-height: 0.62;
+  --score-rest-gap: 0.5;
+
+  /* layout */
+  --stave-gap-social: 48px;
+  --stave-gap-poster: 72px;
+  --stave-gap-web: 32px;
+  --stave-gap-front_panel: 6mm;
+  --stave-gap-poster_a2: 24mm;
+  --margin-screen: 0.0833;
+  --print-safe: 3mm;
+  --print-bleed: 3mm;
+
+  /* motion */
+  --fps: 30;
+  --dur-instant: 80ms;
+  --dur-quick: 160ms;
+  --dur-base: 280ms;
+  --dur-slow: 480ms;
+  --dur-line-draw: 500ms;
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-enter: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-exit: cubic-bezier(0.4, 0, 1, 1);
+  --stagger-lines-bottom-to-top: 80ms;
+  --stagger-container-then-text: 60ms;
+  --stagger-bars: 120ms;
+  --spring-stiffness: 220;
+  --spring-damping: 26;
+  --spring-mass: 1;
+}

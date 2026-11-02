@@ -1,0 +1,25 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><link rel="stylesheet" href="../../brand/agent/visual/fonts.css"><link rel="stylesheet" href="../../brand/agent/visual/tokens.css"><link rel="stylesheet" href="components.css"><script src="stave.js"></script><script src="example-batches.js"></script><title>Roast-level badge</title>
+<style>
+body{width:1200px;height:640px;position:relative;padding:64px}
+.row{display:flex;gap:var(--space-7);align-items:flex-end}
+.badge{display:flex;flex-direction:column;gap:var(--space-3)}
+.badge .zh{font-family:var(--font-body-cjk);font-size:var(--text-lead-size);letter-spacing:.06em}
+.dark{background:var(--kiln-char);color:var(--rice-paper);padding:var(--space-6);margin-top:var(--space-8);gap:var(--space-6);width:fit-content}
+.chip{display:flex;align-items:center;gap:var(--space-4)}
+</style></head><body>
+<div class="t-label" style="margin-bottom:var(--space-6)">ROAST-LEVEL BADGE · 焙度 1–5 · COMPONENT</div>
+<div class="row" id="big"></div>
+<div class="row dark" id="small"></div>
+<div class="concept-flag" style="right:24px;bottom:16px">CONCEPT / EXAMPLE ONLY · NOT FINAL ART</div>
+<script>
+/* <RoastBadge level={n} size="lg|sm" reversed /> : level bar on line n counted from the bottom. */
+function RoastBadge(n,{size="lg",reversed=false}={}){
+  const w=size==="lg"?168:64;
+  const el=document.createElement("div"); el.className=size==="lg"?"badge":"chip";
+  el.innerHTML=TR.mark({width:w,level:n,reversed})+(size==="lg"
+    ?'<div class="zh">焙度 '+n+'</div><div class="t-label">ROAST LEVEL '+n+'</div>'
+    :'<div><div class="zh" style="font-family:var(--font-body-cjk);font-size:16px">焙度 '+n+'</div><div class="t-caption" style="white-space:nowrap">ROAST LEVEL '+n+'</div></div>');
+  return el;
+}
+for(let n=1;n<=5;n++){ big.appendChild(RoastBadge(n)); small.appendChild(RoastBadge(n,{size:"sm",reversed:true})); }
+</script></body></html>

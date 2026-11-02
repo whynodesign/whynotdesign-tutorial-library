@@ -1,0 +1,36 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><link rel="stylesheet" href="../../brand/agent/visual/fonts.css"><link rel="stylesheet" href="../../brand/agent/visual/tokens.css"><link rel="stylesheet" href="components.css"><script src="stave.js"></script><script src="example-batches.js"></script><title>Anchor sheet</title>
+<style>
+/* The ANCHOR: the one approved reference image for image/video models. Only whitelisted strings and hex codes appear on it.
+   Every application we want models to keep appears here exactly once. Rendered from code - regenerate, never hand-edit. */
+html,body{width:1600px;height:1200px;overflow:hidden}
+.a{position:absolute}
+.hex{font-family:var(--font-mono);font-size:13px;letter-spacing:.06em;margin-top:8px}
+.sw{width:100%;height:120px}
+img.app{display:block;height:100%}
+</style></head><body class="grain" style="position:relative">
+<img class="a" src="../../brand/agent/visual/assets/logos/lockup-horizontal.svg" style="left:64px;top:64px;height:200px">
+<img class="a" src="../../brand/agent/visual/assets/logos/symbol-reversed.svg" style="left:64px;top:320px;height:150px">
+<img class="a" src="../../brand/agent/visual/assets/logos/symbol-mono-char.svg" style="left:250px;top:320px;height:150px">
+<div class="a" id="lv" style="left:64px;top:520px;display:flex;gap:28px"></div>
+<div class="a" style="left:64px;top:700px;width:680px;display:grid;grid-template-columns:62fr 24fr 10fr 4fr">
+  <div><div class="sw" style="background:var(--rice-paper);outline:1px solid var(--kiln-char);outline-offset:-1px;position:relative"><svg style="position:absolute;right:16px;top:16px" width="20" height="20"><circle cx="10" cy="10" r="9" fill="#D8432B"/></svg></div><div class="hex">#EFE8DA &nbsp; ● #D8432B</div></div>
+  <div><div class="sw" style="background:var(--kiln-char)"></div><div class="hex">#1E1A17</div></div>
+  <div><div class="sw" style="background:var(--oolong-amber)"></div><div class="hex">#A8642A</div></div>
+  <div><div class="sw" style="background:var(--celadon-grey)"></div><div class="hex" style="writing-mode:vertical-rl">#A9B3A1</div></div>
+</div>
+<div class="a" style="left:64px;top:900px;width:680px">
+  <div style="font-family:var(--font-display-cjk);font-weight:700;font-size:72px;line-height:1;letter-spacing:.06em">焙火如樂譜</div>
+  <div class="t-label" style="margin-top:18px">ROAST LIKE A SCORE</div>
+  <div style="font-family:var(--font-body-cjk);font-size:22px;margin-top:22px;letter-spacing:.04em">炭焙烏龍 · CHARCOAL-ROASTED OOLONG</div>
+  <div class="t-label" style="margin-top:14px">焙次 No. 017 · 焙度 4 · 6 回</div>
+</div>
+<div class="a" style="left:800px;top:64px;height:520px;display:flex;gap:24px">
+  <img class="app" src="screenshots/label-front_017_paper.png">
+  <img class="app" src="screenshots/label-front_009_celadon.png">
+</div>
+<div class="a" style="left:790px;top:620px;height:500px;display:flex;gap:24px">
+  <img class="app" src="screenshots/poster_017_noflag.png" style="outline:1px solid var(--kiln-char);outline-offset:-1px">
+  <img class="app" src="screenshots/social-card_018.png">
+</div>
+<script>for(let n=1;n<=5;n++){const d=document.createElement("div");d.innerHTML=TR.mark({width:112,level:n})+'<div class="hex">焙度 '+n+'</div>';lv.appendChild(d);}</script>
+</body></html>

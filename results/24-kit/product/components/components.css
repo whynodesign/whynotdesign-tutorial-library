@@ -1,0 +1,13 @@
+/* Shared component styles. Uses tokens only. Load order: fonts.css, tokens.css, components.css */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--rice-paper); color: var(--kiln-char); }
+.t-label { font-family: var(--text-label-family); font-size: var(--text-label-size); line-height: var(--text-label-line); letter-spacing: var(--text-label-tracking); } /* caps are written in the source, never by CSS, so DOM text == whitelist string */
+.t-caption { font-family: var(--text-caption-family); font-size: var(--text-caption-size); line-height: var(--text-caption-line); letter-spacing: var(--text-caption-tracking); }
+.t-body { font-family: var(--text-body-family); font-size: var(--text-body-size); line-height: var(--text-body-line); letter-spacing: var(--text-body-tracking); }
+.t-h1 { font-family: var(--text-h1-family); font-weight: var(--weight-display-cjk); font-size: var(--text-h1-size); line-height: var(--text-h1-line); letter-spacing: var(--text-h1-tracking); }
+.t-display { font-family: var(--text-display-family); font-weight: var(--weight-display-cjk); font-size: var(--text-display-size); line-height: var(--text-display-line); letter-spacing: var(--text-display-tracking); }
+.t-numeral { font-family: var(--text-numeral-family); font-size: var(--text-numeral-size); line-height: var(--text-numeral-line); letter-spacing: var(--text-numeral-tracking); }
+.t-wordmark { font-family: var(--font-wordmark-latin); font-weight: var(--weight-wordmark-latin); letter-spacing: var(--tracking-wordmark); text-transform: uppercase; }
+.grain::after { content: ""; position: absolute; inset: 0; background: url("../../brand/agent/visual/assets/textures/rice-paper-grain.png"); background-size: 512px; mix-blend-mode: multiply; opacity: var(--grain-opacity); pointer-events: none; }
+.concept-flag { position: absolute; font-family: var(--font-mono); font-size: 10px; letter-spacing: .08em; opacity: .55; }
+.noflag .concept-flag{display:none}

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="283.8mm" height="274.0mm" viewBox="-32.00 -77.00 283.80 274.00"><rect x="-32.0" y="-77.0" width="283.8" height="274.0" fill="#FFFFFF"/>
+  <g id="CUT" data-name="切割線">
+    <path d="M231.80,0.00 L231.80,120.00" stroke="#000000" stroke-width="0.4" fill="none" />
+    <path d="M0.00,0.00 L-12.00,5.00 L-12.00,115.00 L0.00,120.00" stroke="#000000" stroke-width="0.4" fill="none" />
+    <path d="M0.00,0.00 L70.00,0.00" stroke="#000000" stroke-width="0.4" fill="none" />
+    <path d="M115.45,0.00 C115.45,-1.50 112.00,-0.90 112.00,-3.00" stroke="#000000" stroke-width="0.4" fill="none" />
+    <path d="M70.00,0.00 L73.00,-11.00 L73.00,-14.00 L112.00,-14.00 L112.00,-3.00" stroke="#000000" stroke-width="0.4" fill="none" />
+    <path d="M115.45,0.00 L115.45,-45.00" stroke="#000000" stroke-width="0.4" fill="none" />
+    <path d="M185.90,0.00 L185.90,-45.00" stroke="#000000" stroke-width="0.4" fill="none" />
+    <path d="M140.68,-45.00 L142.68,-46.50 L158.68,-46.50 L160.68,-45.00" stroke="#000000" stroke-width="0.4" fill="none" />
+    <path d="M115.45,-45.00 L116.40,-45.00 L116.40,-54.00 A3.00,3.00 0 0,1 119.40,-57.00 L181.95,-57.00 A3.00,3.00 0 0,1 184.95,-54.00 L184.95,-45.00 L185.90,-45.00" stroke="#000000" stroke-width="0.4" fill="none" />
+    <path d="M185.90,0.00 C185.90,-1.50 189.35,-0.90 189.35,-3.00" stroke="#000000" stroke-width="0.4" fill="none" />
+    <path d="M189.35,-3.00 L189.35,-14.00 L228.80,-14.00 L228.80,-3.00 L231.80,0.00" stroke="#000000" stroke-width="0.4" fill="none" />
+    <path d="M115.45,120.00 L185.90,120.00" stroke="#000000" stroke-width="0.4" fill="none" />
+    <path d="M70.00,120.00 C70.00,121.50 73.45,120.90 73.45,123.00" stroke="#000000" stroke-width="0.4" fill="none" />
+    <path d="M73.45,123.00 L73.45,134.00 L112.45,134.00 L112.45,123.00 L115.45,120.00" stroke="#000000" stroke-width="0.4" fill="none" />
+    <path d="M0.00,120.00 L0.00,165.00" stroke="#000000" stroke-width="0.4" fill="none" />
+    <path d="M70.00,120.00 L70.00,165.00" stroke="#000000" stroke-width="0.4" fill="none" />
+    <path d="M25.00,165.00 L27.00,166.50 L43.00,166.50 L45.00,165.00" stroke="#000000" stroke-width="0.4" fill="none" />
+    <path d="M0.00,165.00 L0.95,165.00 L0.95,174.00 A3.00,3.00 0 0,0 3.95,177.00 L66.05,177.00 A3.00,3.00 0 0,0 69.05,174.00 L69.05,165.00 L70.00,165.00" stroke="#000000" stroke-width="0.4" fill="none" />
+    <path d="M185.90,120.00 L188.90,123.00 L188.90,134.00 L228.80,134.00 L231.80,123.00 L231.80,120.00" stroke="#000000" stroke-width="0.4" fill="none" />
+  </g>
+  <g id="CREASE" data-name="摺線">
+    <path d="M70.00,0.00 L70.00,120.00" stroke="#00FF00" stroke-width="0.4" stroke-dasharray="4 2" fill="none" />
+    <path d="M115.45,0.00 L115.45,120.00" stroke="#00FF00" stroke-width="0.4" stroke-dasharray="4 2" fill="none" />
+    <path d="M185.90,0.00 L185.90,120.00" stroke="#00FF00" stroke-width="0.4" stroke-dasharray="4 2" fill="none" />
+    <path d="M0.00,0.00 L0.00,120.00" stroke="#00FF00" stroke-width="0.4" stroke-dasharray="4 2" fill="none" />
+    <path d="M70.00,0.00 L115.45,0.00" stroke="#00FF00" stroke-width="0.4" stroke-dasharray="4 2" fill="none" />
+    <path d="M115.45,-45.00 L140.68,-45.00 M160.68,-45.00 L185.90,-45.00" stroke="#00FF00" stroke-width="0.4" stroke-dasharray="4 2" fill="none" />
+    <path d="M115.45,0.00 L185.90,0.00" stroke="#00FF00" stroke-width="0.4" stroke-dasharray="4 2" fill="none" />
+    <path d="M185.90,0.00 L231.80,0.00" stroke="#00FF00" stroke-width="0.4" stroke-dasharray="4 2" fill="none" />
+    <path d="M70.00,120.00 L115.45,120.00" stroke="#00FF00" stroke-width="0.4" stroke-dasharray="4 2" fill="none" />
+    <path d="M0.00,165.00 L25.00,165.00 M45.00,165.00 L70.00,165.00" stroke="#00FF00" stroke-width="0.4" stroke-dasharray="4 2" fill="none" />
+    <path d="M0.00,120.00 L70.00,120.00" stroke="#00FF00" stroke-width="0.4" stroke-dasharray="4 2" fill="none" />
+    <path d="M185.90,120.00 L231.80,120.00" stroke="#00FF00" stroke-width="0.4" stroke-dasharray="4 2" fill="none" />
+  </g>
+  <g id="DIMENSIONS" data-name="尺寸標註">
+    <path d="M70.00,60.00 L70.00,58.00 M115.45,60.00 L115.45,58.00 M70.00,60.00 L115.45,60.00" stroke="#3B82F6" stroke-width="0.25" fill="none" />
+    <path d="M115.45,60.00 L115.45,58.00 M185.90,60.00 L185.90,58.00 M115.45,60.00 L185.90,60.00" stroke="#3B82F6" stroke-width="0.25" fill="none" />
+    <path d="M70.00,0.00 L58.00,0.00 M70.00,120.00 L58.00,120.00 M60.00,0.00 L60.00,120.00" stroke="#3B82F6" stroke-width="0.25" fill="none" />
+    <text x="92.72" y="58.00" font-size="3.5" font-family="sans-serif" fill="#3B82F6" text-anchor="middle">45mm</text>
+    <text x="150.68" y="58.00" font-size="3.5" font-family="sans-serif" fill="#3B82F6" text-anchor="middle">70mm</text>
+    <text x="56.00" y="60.00" font-size="3.5" font-family="sans-serif" fill="#3B82F6" text-anchor="middle" transform="rotate(-90.00 56.00 60.00)">120mm</text>
+  </g>
+<g id="OVERLAY"><rect x="-3" y="-3" width="76" height="126" fill="none" stroke="#D8432B" stroke-width="0.25" stroke-dasharray="1.5 1"/><rect x="3" y="3" width="64" height="114" fill="none" stroke="#B03AA8" stroke-width="0.25"/><text x="35.0" y="62" font-family="DM Mono, monospace" font-size="3.2" text-anchor="middle" fill="#1E1A17">FRONT 正面</text><rect x="67" y="-3" width="51.45" height="126" fill="none" stroke="#D8432B" stroke-width="0.25" stroke-dasharray="1.5 1"/><rect x="73" y="3" width="39.45" height="114" fill="none" stroke="#B03AA8" stroke-width="0.25"/><text x="92.725" y="62" font-family="DM Mono, monospace" font-size="3.2" text-anchor="middle" fill="#1E1A17">SIDE A</text><rect x="112.45" y="-3" width="76.45" height="126" fill="none" stroke="#D8432B" stroke-width="0.25" stroke-dasharray="1.5 1"/><rect x="118.45" y="3" width="64.45" height="114" fill="none" stroke="#B03AA8" stroke-width="0.25"/><text x="150.675" y="62" font-family="DM Mono, monospace" font-size="3.2" text-anchor="middle" fill="#1E1A17">BACK 背面</text><rect x="182.9" y="-3" width="51.900000000000006" height="126" fill="none" stroke="#D8432B" stroke-width="0.25" stroke-dasharray="1.5 1"/><rect x="188.9" y="3" width="39.900000000000006" height="114" fill="none" stroke="#B03AA8" stroke-width="0.25"/><text x="208.85000000000002" y="62" font-family="DM Mono, monospace" font-size="3.2" text-anchor="middle" fill="#1E1A17">SIDE B</text><text x="-28.0" y="183.0" font-family="DM Mono, monospace" font-size="3" fill="#1E1A17">RTE 70x45x120 mm, 0.45 mm board. Source: open-dieline (test #85), PolyForm Noncommercial 1.0.0.</text><text x="-28.0" y="188.0" font-family="DM Mono, monospace" font-size="3" fill="#1E1A17">Red dashed = bleed 3 mm, magenta = safe 3 mm (overlay by TONEROAST kit). Front/back assignment to confirm with die-maker. NOT production.</text></g></svg>

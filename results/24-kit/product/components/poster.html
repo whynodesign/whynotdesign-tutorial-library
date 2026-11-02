@@ -1,0 +1,32 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><link rel="stylesheet" href="../../brand/agent/visual/fonts.css"><link rel="stylesheet" href="../../brand/agent/visual/tokens.css"><link rel="stylesheet" href="components.css"><script src="stave.js"></script><script src="example-batches.js"></script><title>Poster - Roast Score</title>
+<style>
+html,body{width:1080px;height:1440px;overflow:hidden}
+.board{position:relative;width:1080px;height:1440px}
+svg.st{position:absolute;inset:0}
+.m{position:absolute;left:90px;right:90px}
+.head{top:150px;font-family:var(--font-display-cjk);font-weight:700;font-size:var(--text-display-size);line-height:var(--text-display-line);letter-spacing:var(--text-display-tracking)}
+.foot{bottom:90px;display:flex;justify-content:space-between;align-items:flex-end}
+.wm-zh{font-family:var(--font-display-cjk);font-weight:700;font-size:56px;line-height:1;letter-spacing:.06em}
+.wm-en{font-family:var(--font-wordmark-latin);font-weight:500;letter-spacing:var(--tracking-wordmark);font-size:13px;margin-top:12px}
+</style></head><body>
+<div class="board grain">
+  <div class="m head">焙火如樂譜</div>
+  <div class="m t-label" style="top:268px">ROAST LIKE A SCORE</div>
+  <svg class="st" id="st" viewBox="0 0 1080 1440"></svg>
+  <div class="m foot">
+    <div><div class="wm-zh">焙曲</div><div class="wm-en">TONEROAST</div></div>
+    <div class="t-label" id="meta" style="text-align:right"></div>
+  </div>
+</div>
+<div class="concept-flag" style="left:90px;bottom:40px">CONCEPT / EXAMPLE ONLY · FICTIONAL ROAST DATA · NOT FINAL ART</div>
+<script>
+/* <ScorePoster batch="017" /> - the Roast Score as the only image. Lines bleed; bars stay inside margins. */
+(function(){
+const id=TR.params.get("batch")||"017", B=BATCHES[id];
+const gap=TR.num("stave-gap-poster"), t0=600, weight=3, mx=90;
+st.innerHTML = TR.lines({x:0,top:t0,width:1080,gap,weight,color:TR.tok("kiln-char")})
+ + TR.score(B,{x:mx,top:t0,width:1080-2*mx,gap,weight,labelSize:15})
+ + TR.ember({x:mx,top:t0,width:1080-2*mx,gap});
+meta.innerHTML="焙次 No. "+id+"<br>焙度 "+B.level+" · "+B.rounds.length+" 回";
+})();
+</script></body></html>

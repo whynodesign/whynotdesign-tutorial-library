@@ -1,0 +1,40 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><link rel="stylesheet" href="../../brand/agent/visual/fonts.css"><link rel="stylesheet" href="../../brand/agent/visual/tokens.css"><link rel="stylesheet" href="components.css"><script src="stave.js"></script><script src="example-batches.js"></script><title>Front panel 70x120 mm</title>
+<style>
+/* Artboard = front panel 70 x 120 mm + 3 mm bleed each side = 76 x 126 mm. Origin of trim = (3mm,3mm). */
+html,body{width:76mm;height:126mm;overflow:hidden}
+.board{position:relative;width:76mm;height:126mm;background:var(--ground,var(--rice-paper));color:var(--ink,var(--kiln-char))}
+svg.st{position:absolute;left:0;top:0;width:76mm;height:126mm}
+.zh{position:absolute;left:calc(var(--print-bleed) + 6mm);font-family:var(--font-display-cjk);font-weight:700;font-size:21mm;line-height:1;letter-spacing:.06em}
+.en{position:absolute;left:calc(var(--print-bleed) + 6mm);font-family:var(--font-wordmark-latin);font-weight:500;letter-spacing:var(--tracking-wordmark);font-size:3.1mm}
+.info{position:absolute;left:calc(var(--print-bleed) + 6mm);right:calc(var(--print-bleed) + 6mm);font-family:var(--font-mono);font-size:var(--print-label);letter-spacing:.06em;line-height:1.55}
+.info .rule{height:0.25mm;background:currentColor;margin:1.6mm 0}
+.guides{display:none}
+body.show-guides .guides{display:block}
+</style></head><body>
+<div class="board grain" id="b">
+  <svg class="st" id="st" viewBox="0 0 76 126"></svg>
+  <div class="zh" style="top:59mm">焙曲</div>
+  <div class="en" style="top:83.2mm">TONEROAST</div>
+  <div class="info" style="top:95mm">
+    <div>炭焙烏龍</div><div>CHARCOAL-ROASTED OOLONG</div>
+    <div class="rule"></div>
+    <div id="meta"></div>
+    <div style="display:flex;justify-content:space-between"><span>台灣 · TAIWAN</span><span>50 g</span></div>
+  </div>
+  <svg class="st guides" viewBox="0 0 76 126"><rect x="3" y="3" width="70" height="120" fill="none" stroke="#000" stroke-width=".15"/><rect x="6" y="6" width="64" height="114" fill="none" stroke="#5C8A5A" stroke-width=".15" stroke-dasharray="1 .6"/></svg>
+</div>
+<script>
+/* <FrontPanel batch="017" ground="paper|celadon|char" guides /> */
+const p=TR.params, id=p.get("batch")||"017", B=BATCHES[id], ground=p.get("ground")||"paper";
+const lvl=+(p.get("level")||B.level), b=document.getElementById("b");
+if(ground==="celadon") b.style.setProperty("--ground","var(--celadon-grey)");
+if(ground==="char"){ b.style.setProperty("--ground","var(--kiln-char)"); b.style.setProperty("--ink","var(--rice-paper)"); }
+if(p.has("guides")) document.body.classList.add("show-guides");
+const ink=ground==="char"?TR.tok("rice-paper"):TR.tok("kiln-char");
+// stave: gap = --stave-gap-front_panel (6mm), runs edge to edge into the bleed; top line at 3+15 = 18mm
+const gap=parseFloat(TR.tok("stave-gap-front_panel")), t0=18, weight=0.35;
+st.innerHTML = TR.lines({x:0,top:t0,width:76,gap,weight,color:ink})
+  + TR.levelBar({x:0,top:t0,width:76,gap,weight,level:lvl})
+  + TR.ember({x:0,top:t0,width:76,gap,dotInset:6});
+meta.textContent="焙次 No. "+id+" · 焙度 "+lvl+" · "+B.rounds.length+" 回";
+</script></body></html>

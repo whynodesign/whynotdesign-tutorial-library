@@ -1,0 +1,59 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><link rel="stylesheet" href="../../brand/agent/visual/fonts.css"><link rel="stylesheet" href="../../brand/agent/visual/tokens.css"><link rel="stylesheet" href="../../product/components/components.css"><script src="../../product/components/stave.js"></script><script src="../batch-021.js"></script><script src="../../product/components/motion.js"></script><title>Brand motion unit 5 s - 焙次 No. 021 (product unit, level 3)</title>
+<style>
+html,body{width:1080px;height:1080px;overflow:hidden}
+.board{position:relative;width:1080px;height:1080px}
+svg.st{position:absolute;inset:0}
+.zh,.en{position:absolute;will-change:transform,opacity}
+.zh{font-family:var(--font-display-cjk);font-weight:700;line-height:1;letter-spacing:.08em}
+#dl{position:absolute;font-family:var(--font-mono);letter-spacing:var(--text-label-tracking);line-height:1;white-space:nowrap;will-change:transform,opacity}
+.en{font-family:var(--font-wordmark-latin);font-weight:500;letter-spacing:var(--tracking-wordmark);line-height:1}
+#tc{position:absolute;right:24px;bottom:16px;font:12px var(--font-mono);opacity:.5}
+</style></head><body>
+<div class="board grain"><svg class="st" id="st" viewBox="0 0 1080 1080"></svg><div class="zh" id="zh">焙曲</div><div class="en" id="en">TONEROAST</div><div id="dl"></div><div id="tc"></div></div>
+<script>
+/* Deterministic, seekable: frame(tMs) draws the exact state at tMs. ?t=2200 renders one frame; no ?t plays once and stops. */
+(function(){
+const M=window.MOTION, beat=Object.fromEntries(M.brand_unit_5s.beats.map(b=>[b.id,b]));
+function bez(x1,y1,x2,y2){return p=>{if(p<=0)return 0;if(p>=1)return 1;let lo=0,hi=1,t=.5;for(let i=0;i<30;i++){t=(lo+hi)/2;const x=3*(1-t)**2*t*x1+3*(1-t)*t*t*x2+t**3;(x<p)?lo=t:hi=t;}return 3*(1-t)**2*t*y1+3*(1-t)*t*t*y2+t**3;}}
+const ease=k=>bez(...M.easing[k].match(/[\d.]+/g).map(Number));
+const enter=ease("enter"), std=ease("standard");
+const sp=M.spring.note_land, w0=Math.sqrt(sp.stiffness/sp.mass), z=sp.damping/(2*Math.sqrt(sp.stiffness*sp.mass)), wd=w0*Math.sqrt(1-z*z);
+const spring=s=>s<=0?0:1-Math.exp(-z*w0*s)*(Math.cos(wd*s)+z/Math.sqrt(1-z*z)*Math.sin(wd*s));
+const clamp=v=>Math.max(0,Math.min(1,v));
+// geometry: mark 360 px wide, scaled from the 240-unit master
+const k=360/TR.num("mark-width"), MW=360, gap=TR.num("mark-line-gap")*k, lw=TR.num("mark-line-weight")*k;
+const X=185, T0=(1080-TR.num("mark-height")*k)/2+TR.num("mark-top-line-y")*k;
+const ink=TR.tok("kiln-char"), amber=TR.tok("oolong-amber");
+const ly=n=>TR.lineY(n,T0,gap);
+const ID=TR.params.get("batch")||"021", B=BATCHES[ID], LVL=B.level;
+dl.textContent="焙次 No. "+ID+" · 焙度 "+LVL+" · "+B.rounds.length+" 回";
+const dlSize=TR.num("text-lead-size");
+// wordmark: ink of 焙曲 spans line 5 top -> line 2 bottom (about 0.92 em ink for this face)
+const zhInk=ly(2)+lw-ly(5), zhSize=zhInk/0.92, wx=X+MW+gap;
+zh.style.fontSize=zhSize+"px"; en.style.fontSize=(gap*0.62)+"px";
+function frame(t){
+  let s="";
+  for(let i=0;i<5;i++){ // lines, bottom first
+    const p=enter(clamp((t-beat.lines.start-i*M.stagger_ms.lines_bottom_to_top)/M.duration_ms.line_draw));
+    s+='<rect x="'+X+'" y="'+ly(i+1)+'" width="'+(MW*p)+'" height="'+lw+'" fill="'+ink+'"/>';
+  }
+  { // product unit: the single level bar (焙度 n = line n) travels in from the right edge along its own line
+    const ts=(t-beat.note.start)/1000;
+    if(ts>0){ const xs=X+MW*TR.num("mark-level-x-start"), off=(1-spring(ts))*(1080-xs);
+      s+=TR.levelBar({x:X+off,top:T0,width:MW,gap,weight:lw,level:LVL}); }
+  }
+  const pe=enter(clamp((t-beat.ember.start)/(beat.ember.end-beat.ember.start)));
+  if(pe>0){ const r=gap*TR.num("mark-dot-r")*pe; s+='<circle cx="'+(X+MW-gap*TR.num("mark-dot-r"))+'" cy="'+(T0-gap*TR.num("mark-dot-offset"))+'" r="'+r+'" fill="'+TR.tok("ember-red")+'"/>'; }
+  st.innerHTML=s;
+  const pz=std(clamp((t-beat.wordmark.start)/M.duration_ms.base)), pn=std(clamp((t-beat.wordmark.start-M.stagger_ms.container_then_text)/M.duration_ms.base));
+  zh.style.left=wx+"px"; zh.style.top=(ly(5)-zhSize*0.04+8*(1-pz))+"px"; zh.style.opacity=pz;
+  en.style.left=wx+"px"; en.style.top=(ly(1)+lw-gap*0.62*0.72+8*(1-pn))+"px"; en.style.opacity=pn;
+  const pd=std(clamp((t-beat.wordmark.start-2*M.stagger_ms.container_then_text)/M.duration_ms.base));
+  dl.style.fontSize=dlSize+"px"; dl.style.left=X+"px"; dl.style.top=(ly(1)+lw+gap+8*(1-pd))+"px"; dl.style.opacity=pd;
+  if(TR.params.has("clean")) tc.textContent="CONCEPT · NOT FINAL ART"; else tc.textContent="t="+Math.round(t)+"ms  f="+Math.round(t/1000*M.fps)+"  CONCEPT";
+}
+const q=TR.params.get("t");
+if(q!==null) frame(+q); else { const t0=performance.now(); const loop=n=>{const t=n-t0; frame(Math.min(t,5000)); if(t<5000) requestAnimationFrame(loop);}; requestAnimationFrame(loop); }
+window.frame=frame;
+})();
+</script></body></html>

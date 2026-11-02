@@ -1,0 +1,34 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><link rel="stylesheet" href="../../brand/agent/visual/fonts.css"><link rel="stylesheet" href="../../brand/agent/visual/tokens.css"><link rel="stylesheet" href="components.css"><script src="stave.js"></script><script src="example-batches.js"></script><title>Social card 1080x1350</title>
+<style>
+html,body{width:1080px;height:1350px;overflow:hidden;background:var(--kiln-char)}
+.board{position:relative;width:1080px;height:1350px;background:var(--kiln-char);color:var(--rice-paper)}
+svg.st{position:absolute;inset:0}
+.m{position:absolute;left:90px;right:90px}
+.num{position:absolute;left:84px;font-family:var(--font-mono);color:var(--oolong-amber);line-height:1}
+.h{font-family:var(--font-display-cjk);font-weight:700;font-size:var(--text-h1-size);line-height:var(--text-h1-line);letter-spacing:var(--text-h1-tracking)}
+.wm{font-family:var(--font-wordmark-latin);font-weight:500;letter-spacing:var(--tracking-wordmark);font-size:14px}
+</style></head><body>
+<div class="board">
+  <div class="m t-label" style="top:90px" id="batch"></div>
+  <svg class="st" id="st" viewBox="0 0 1080 1350"></svg>
+  <div class="num" id="num"></div>
+  <div class="m" style="top:900px"><div class="h" id="h"></div><div class="t-label" style="margin-top:20px" id="en"></div></div>
+  <div class="m" style="bottom:90px;display:flex;justify-content:space-between;align-items:baseline">
+    <span class="t-label">ROAST LIKE A SCORE</span><span><span style="font-family:var(--font-display-cjk);font-weight:700;font-size:28px;letter-spacing:.06em;margin-right:18px">焙曲</span><span class="wm">TONEROAST</span></span>
+  </div>
+</div>
+<script>
+/* <LevelCard batch="018" /> - numeral sits ON the stave: its baseline is line 1, its cap height spans the stave. */
+(function(){
+const id=TR.params.get("batch")||"018", B=BATCHES[id];
+const gap=TR.num("stave-gap-social"), t0=420, weight=3;
+st.innerHTML = TR.lines({x:0,top:t0,width:1080,gap,weight,color:TR.tok("rice-paper")})
+  + TR.levelBar({x:0,top:t0,width:1080,gap,weight,level:B.level,xStart:0.5})
+  + TR.ember({x:0,top:t0,width:1080,gap,dotInset:90});
+// numeral: DM Mono cap height ~0.7 em -> size = stave height / 0.7 ; baseline on line 1
+const staveH=4*gap+weight, size=staveH/0.7, n=document.getElementById("num");
+n.style.fontSize=size+"px"; n.textContent=B.level;
+n.style.top=(TR.lineY(1,t0,gap)+weight - size*0.86)+"px";
+batch.textContent="焙次 No. "+id; h.textContent="焙度 "+B.level+" · "+B.rounds.length+" 回"; en.textContent="ROAST LEVEL "+B.level;
+})();
+</script></body></html>
