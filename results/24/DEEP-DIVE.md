@@ -401,7 +401,7 @@ tools/gen-tokens.py
   - 维护是最难的部分。
 - **有矛盾的地方：**
   - 6 月说组件以 HTML 为准，9 月说 "React for components"，Sonata kit 里也确实是 .tsx。合理的理解是规格和产出两层都有，但作者没有统一说明。
-  - "open source" 的说法见第 4 节前文，实际没有开源仓库。
+  - "open source" 的说法见本文第 0 节，实际没有开源仓库。
 - **读不到：**
   - 4 月 18 日 .html 设计规范的 43 秒视频（只拿到视频链接，没看画面）。
   - 2025-12-22《Software > Systems > Societies》的 Loom 和 Figma 演示稿（https://x.com/emmettshine/status/2003104017178648741 ，链接没打开）。
